@@ -3,15 +3,13 @@
     padding: 0;
     box-sizing: border-box;
   }
-  
-  #div {
+
+  .flex-column {
     display: flex;
     flex-direction: column;
-    gap: 1em;
-    width: 25%;
-    margin-left: 2em;
+    
   }
-  
+    
   hr,
   h1 {
     margin: 0.5em 25% 0.5em 0;
@@ -25,3 +23,24 @@
   h1 {
     margin-left: 1em;
   }
+
+  .main-container {
+    width: 50%;
+    margin: 5% auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  form {
+    width: 94%;
+    margin: 1% 8%;
+    align-items: flex-start;
+  }
+
+  input {
+    margin: 1% 0;
+  }
+
+
+  
