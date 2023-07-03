@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+hr,
+h1 {
+  margin: 0.5em 25% 0.5em 0;
+}
+
+ul {
+  list-style: none;
+  margin-left: 2em;
+}
+
+h1 {
+  margin-left: 1em;
+}
+
+.main-container {
+  width: 50%;
+  margin: 5% auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+form {
+  width: 94%;
+  margin: 1% 8%;
+  align-items: flex-start;
+}
+
+input {
+  margin: 1% 0;
+}
