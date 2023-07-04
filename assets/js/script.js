@@ -22,6 +22,7 @@ class Book {
 
       books.push(book);
       localStorage.setItem('bookData', JSON.stringify(books));
+      this.displaylist();
     }
   }
 
@@ -30,6 +31,7 @@ class Book {
     bookData = bookData.filter((local) => local.id !== parseInt(id, 10));
     books = bookData;
     localStorage.setItem('bookData', JSON.stringify(books));
+    this.displaylist();
   }
 
   displaylist() {
@@ -39,8 +41,7 @@ class Book {
       const hr = document.createElement('hr');
 
       bookCard.innerHTML += `    
-      <p>${book.title}</p>
-      <p>${book.author}</p>  
+      <p class="my-title-container">'${book.title}' by ${book.author}</p> 
         `;
       bookCard.id = `data-${book.id}`;
       removeButton.textContent = 'Remove';
@@ -59,4 +60,17 @@ class Book {
   }
 
 }
-displaylist();
+const newBook = new Book();
+newBook.displaylist();
+
+// display all books by default
+
+addButton.addEventListener('click', (e) => {
+  e.preventDefault();
+  newBook.addBook(formTitle.value, formAuthor.value);
+
+  formTitle.value = '';
+  formAuthor.value = '';
+  window.location.reload();
+});
+//displaylist();
