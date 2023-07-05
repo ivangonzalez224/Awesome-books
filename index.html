@@ -14,13 +14,13 @@
         <span>Awesome Books</span>
         <ul>
           <li>
-            <a id="topNav_listItem" href="#">List</a>
+            <a id="topNav_listItem" href="">List</a>
           </li>
           <li>
-            <a id="topNav_newItem" href="#">Add new</a>
+            <a id="topNav_newItem" href="">Add new</a>
           </li>  
           <li>
-            <a id="topNav_contactItem" href="#">Contact</a>
+            <a id="topNav_contactItem" class="" href="">Contact</a>
           </li>
         </ul>
       </div>  
@@ -28,14 +28,15 @@
         <span>Date-time</span>
       </div>
     </header>
-      <div class="book-container">
-        <h1 class="book-title">Awesome books Collection</h1>
+    
+    <div class="book-container">
+      <h1 class="book-title">Awesome books Collection</h1>
     </div>
-    <section class="display-section" id="list"></section>
+    <section class="display-section" id="display-list"></section>
     <br>
     <hr>
     
-    <div id="div">
+    <div id="addBook-div" class="">
         <h2>Add a new book</h2>
         <div id="inputs">
         <input class="title-input" id="title" name="title" type="text" placeholder="Title">
@@ -43,7 +44,27 @@
         <button class="add-button" id="addBook" type="submit">Add</button>
       </div>
     </div>
+
+    <section class="contact-section" id="contact-div">
+      <h2 class="contact-title"> Contact us </h2>
+      <p class="contact-text">
+        Do you have any questions or you just want to say <strong>"HELLO"?</strong>
+      </p>
+      <p class="contact-text2"> You can reach out to us! </p>
+      <ul class="contact-details">
+        <li> Our email: diarisdiakite@gmail.com <br> ivan.gonzalezr224@gmail.com </li>
+        <li> Our phone number:+1-2345-67890 </li>
+        <li> Our address: 10, Downing Street, London, UK. </li>
+      </ul>
+    </section>
+    <footer class="footer-section">
+      <div class="footer-rights"> Copyright @ 2023 Powered by Ivan and Didy. All Rights Reserved. </div>  
+    </footer>
+
+  </section>
+
   </main>
     <script src="assets/js/script.js"></script>
+    <!-- <script src="assets/js/spa.js"></script> -->
 </body>
 </html>

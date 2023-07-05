@@ -100,7 +100,7 @@ hr {
   margin-left: 11rem;
 }
 
-#div {
+#addBook-div {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -172,4 +172,75 @@ button {
   row-gap: 1rem;
   align-items: center;
   justify-content: center;
+}
+
+.contact-info {
+  margin: 1% auto;
+}
+
+.contact-info h1 {
+  text-align: center;
+  margin: 5% auto;
+}
+
+#displayed-section {
+  width: 100vw;
+  min-height: 90vh;
+  margin-top: 0;
+}
+
+/* Footer section */
+
+.footer-section {
+  border: 1.5px solid black;
+  width: 90%;
+  bottom: 0;
+  margin: 1% 5%;
+  padding: 1% 0;
+  text-align: center;
+  position: absolute;
+}
+
+.footer-text {
+  padding: 1rem;
+  position: relative;
+  margin-right: 20px;
+}
+
+/* Contact section */
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 4rem;
+}
+
+.contact-title {
+  font-size: 2rem;
+  font-weight: 400;
+  align-self: center;
+  text-decoration: underline;
+}
+
+.contact-text {
+  margin-bottom: 0;
+}
+
+.contact-text2 {
+  margin-top: 5px;
+  position: relative;
+  align-self: center;
+}
+
+.contact-details li {
+  padding-bottom: 1rem;
+  margin-left: 10rem;
+  right: 22rem;
+}
+
+.hidden {
+  display: none;
+  /* visibility: hidden; */
 }

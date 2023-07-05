@@ -3,7 +3,7 @@ let books = JSON.parse(localStorage.getItem('bookData')) || [];
 const addButton = document.querySelector('#addBook');
 const formTitle = document.getElementById('title');
 const formAuthor = document.getElementById('author');
-const bookList = document.querySelector('#list');
+const bookList = document.querySelector('#display-list');
 
 class Book {
   constructor() {
@@ -70,3 +70,37 @@ addButton.addEventListener('click', (e) => {
   formAuthor.value = '';
   window.location.reload();
 });
+
+
+let displayedDiv = document.createElement('displayed-section');
+
+let displayBooks = document.getElementById('display-list');
+let navbarDisplaylink = document.getElementById('topNav_listItem');
+
+let displayAddBook = document.getElementById('addBook-div');
+let navbarAddlink = document.getElementById('topNav_newItem');
+
+let displayContact = document.getElementById('contact-div');
+let navbarContactlink = document.getElementById('topNav_contactItem');
+  
+navbarDisplaylink.addEventListener('click', () => {
+  displayBooks.classList.remove('hidden');
+  displayAddBook.classList.add('hidden');
+  displayContact.classList.add('hidden');
+  displayedDiv.appendChild(displayBooks);
+})
+
+navbarAddlink.addEventListener('click', () => {
+  displayAddBook.classList.remove('hidden');
+  displayBooks.classList.add('hidden');
+  displayContact.classList.add('hidden');
+  displayedDiv.appendChild(displayAddBook);
+})
+
+navbarContactlink.addEventListener('click', () => {
+  displayContact.classList.remove('hidden');
+  displayAddBook.classList.add('hidden');
+  displayBooks.classList.add('hidden');
+  displayedDiv.appendChild(displayContact);
+})
+
