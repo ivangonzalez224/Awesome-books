@@ -23,6 +23,7 @@ header {
 .top_nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 90%;
   margin: 1% 5%;
   border: 2px solid #000;
@@ -36,6 +37,7 @@ header {
 .top_nav ul {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   width: 40%;
 }
 
@@ -77,27 +79,20 @@ main {
 }
 
 .book-container {
-  align-items: center;
-  margin-right: 12rem;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 h1 {
-  margin: 0.5em 75% 0.5em 0;
-}
-
-hr {
-  width: 15%;
-  margin: auto;
-  border: solid 2px rgb(0, 0, 0);
-  border-radius: 4px;
-  margin-top: 3em;
+  margin: 3% 0;
 }
 
 .book-title {
   width: 100%;
   font-size: 35px;
   font-weight: 400;
-  margin-left: 11rem;
+  text-align: center;
 }
 
 #add-book-div {
@@ -105,7 +100,7 @@ hr {
   flex-direction: column;
   align-items: center;
   margin-top: 2rem;
-  width: 30%;
+  width: 90%;
 }
 
 button {
@@ -134,13 +129,12 @@ button {
 
 .display-section {
   border: 1px solid black;
-  width: 50%;
+  width: 90%;
 }
 
 .title-input {
-  height: 2rem;
+  width: 100%;
   padding: 5px;
-  font-family: 'Lato', sans-serif;
   border-radius: 4px;
   font-size: 1rem;
   box-shadow: rgba(0, 0, 0, 0.16) 0 1px 4px;
@@ -148,13 +142,20 @@ button {
 }
 
 .author-input {
-  height: 2rem;
+  width: 100%;
   padding: 5px;
-  font-family: 'Lato', sans-serif;
   border-radius: 4px;
   font-size: 1rem;
   box-shadow: rgba(0, 0, 0, 0.16) 0 1px 4px;
   border: solid 1px rgb(0, 0, 0);
+}
+
+.display_bookInfo p{
+  width: 90%;
+}
+
+.display_removeBtn {
+  margin: 0 1% 0 2%;
 }
 
 .add-button {
@@ -166,21 +167,12 @@ button {
 }
 
 #inputs {
-  margin-top: 2rem;
   display: flex;
   flex-direction: column;
   row-gap: 1rem;
   align-items: center;
   justify-content: center;
-}
-
-.contact-info {
-  margin: 1% auto;
-}
-
-.contact-info h1 {
-  text-align: center;
-  margin: 5% auto;
+  width: 30%;
 }
 
 .displayed-section {

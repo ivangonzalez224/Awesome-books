@@ -14,13 +14,13 @@
         <span>Awesome Books</span>
         <ul>
           <li>
-            <a id="topNav_listItem" href="">List</a>
+            <a id="topNav_listItem" href="#">List</a>
           </li>
           <li>
-            <a id="topNav_newItem" href="">Add new</a>
+            <a id="topNav_newItem" href="#">Add new</a>
           </li>  
           <li>
-            <a id="topNav_contactItem" class="" href="">Contact</a>
+            <a id="topNav_contactItem" class="" href="#">Contact</a>
           </li>
         </ul>
       </div>  
@@ -30,23 +30,20 @@
     </header>
     
     <div class="book-container" id="main-container">
-      <h1 class="book-title">Awesome books Collection</h1>
+      <h1 class="book-title">All awesome books</h1>
     </div>
     <section id="display-list" class="display-section hidden"></section>
     <br>
     
-    
     <section id="add-book-div" class="form-section hidden">
-      <h2>Add a new book</h2>
       <div id="inputs">
-        <input class="title-input" id="title" name="title" type="text" placeholder="Title">
-        <input class="author-input" id="author" title="author" type="text" placeholder="Author">
+        <input class="title-input" aria-label="title" id="title" name="title" type="text" placeholder="Title">
+        <input class="author-input" aria-label="author" id="author" title="author" type="text" placeholder="Author">
         <button class="add-button" id="addBook" type="submit">Add</button>
       </div>
     </section>
 
     <section id="contact-div" class="contact-section hidden">
-      <h2 class="contact-title"> Contact us </h2>
       <p class="contact-text">
         Do you have any questions or you just want to say <strong>"HELLO"?</strong>
         <br>You can reach out to us!
