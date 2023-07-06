@@ -9,21 +9,57 @@
 </head>
 <body>
   <main>
-      <div class="book-container">
-        <h1 class="book-title">Awesome books Collection</h1>
-    </div>
-    <section class="display-section" id="list"></section>
-    <br>
-    <hr>
+    <header>
+      <div class="top_nav">
+        <span>Awesome Books</span>
+        <ul>
+          <li>
+            <a id="topNav_listItem" href="#">List</a>
+          </li>
+          <li>
+            <a id="topNav_newItem" href="#">Add new</a>
+          </li>  
+          <li>
+            <a id="topNav_contactItem" class="" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>  
+      <div class="date-container" id="date">
+        
+      </div>
+    </header>
     
-    <div id="div">
-        <h2>Add a new book</h2>
-        <div id="inputs">
-        <input class="title-input" id="title" name="title" type="text" placeholder="Title">
-        <input class="author-input" id="author" title="author" type="text" placeholder="Author">
+    <div class="book-container" id="main-container">
+      <h1 class="book-title">All awesome books</h1>
+    </div>
+    <section id="display-list" class="display-section hidden"></section>
+    <br>
+    
+    <section id="add-book-div" class="form-section hidden">
+      <div id="inputs">
+        <input class="title-input" aria-label="title" id="title" name="title" type="text" placeholder="Title">
+        <input class="author-input" aria-label="author" id="author" title="author" type="text" placeholder="Author">
         <button class="add-button" id="addBook" type="submit">Add</button>
       </div>
-    </div>
+    </section>
+
+    <section id="contact-div" class="contact-section hidden">
+      <p class="contact-text">
+        Do you have any questions or you just want to say <strong>"HELLO"?</strong>
+        <br>You can reach out to us!
+      </p>
+      <ul class="contact-details">
+        <li> Our email: <br> diarisdiakite@gmail.com <br> ivan.gonzalezr224@gmail.com </li>
+        <li> Our phone number:+1-2345-67890 </li>
+        <li> Our address: 10, Downing Street, London, UK. </li>
+      </ul>
+    </section>
+    <footer class="footer-section">
+      <div class="footer-rights"> Copyright @ 2023 Powered by Ivan and Didy. All Rights Reserved. </div>  
+    </footer>
+
+  </section>
+
   </main>
     <script src="assets/js/script.js"></script>
 </body>
