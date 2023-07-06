@@ -14,7 +14,6 @@ const bookTitle = document.querySelector('.book-title');
 bookList.style.display = 'block';
 displayAddBook.style.display = 'none';
 
-
 class Book {
   constructor() {
     this.title = document.getElementById('title');
@@ -81,13 +80,14 @@ addButton.addEventListener('click', (e) => {
   formTitle.value = '';
   formAuthor.value = '';
   window.location.reload();
-})
+});
 
 const date = document.getElementById('date');
-date.innerHTML = `<small>${Date()}</small>`;
+let dateTime = new Date();
+dateTime = dateTime.toUTCString();
+date.innerHTML = `<small>${dateTime}</small>`;
 
 navbarDisplaylink.addEventListener('click', () => {
-  console.log('prueba');
   navbarDisplaylink.style.color = '#0000ff';
   navbarAddlink.style.color = '#000';
   navbarContactlink.style.color = '#000';
@@ -116,4 +116,3 @@ navbarContactlink.addEventListener('click', () => {
   displayAddBook.style.display = 'none';
   displayContact.style.display = 'flex';
 });
-

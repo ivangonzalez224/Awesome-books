@@ -17,7 +17,6 @@ header {
   justify-content: center;
   align-items: center;
   width: 100%;
-  
 }
 
 .top_nav {
@@ -34,6 +33,11 @@ header {
   width: 60%;
 }
 
+.contact-details li {
+  margin: 0 auto;
+  width: 100%;
+}
+
 .top_nav ul {
   display: flex;
   justify-content: flex-end;
@@ -41,24 +45,24 @@ header {
   width: 40%;
 }
 
-.top_nav ul li{
+.top_nav ul li {
   list-style-type: none;
   border-right: 1px solid #000;
   margin-left: 2%;
   padding: 0 2%;
 }
 
-.top_nav ul li a{
+.top_nav ul li a {
   text-decoration: none;
   color: #000;
 }
 
-.top_nav ul li a:hover{
-  color: #0000ff;
+.top_nav ul li a:hover {
+  color: #00f;
 }
 
 #topNav_listItem {
-  color: #0000ff;
+  color: #00f;
 }
 
 .top_nav ul li:last-child {
@@ -150,7 +154,7 @@ button {
   border: solid 1px rgb(0, 0, 0);
 }
 
-.display_bookInfo p{
+.display_bookInfo p {
   width: 90%;
 }
 
@@ -224,11 +228,6 @@ button {
   margin-top: 5px;
   position: relative;
   align-self: center;
-}
-
-.contact-details li {
-  margin: 0 auto;
-  width: 100%;
 }
 
 .hidden {
