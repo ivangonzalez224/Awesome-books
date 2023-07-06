@@ -100,7 +100,7 @@ hr {
   margin-left: 11rem;
 }
 
-#addBook-div {
+#add-book-div {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -183,9 +183,9 @@ button {
   margin: 5% auto;
 }
 
-#displayed-section {
-  width: 100vw;
-  min-height: 90vh;
+.displayed-section {
+  width: 60vw;
+  min-height: 20vh;
   margin-top: 0;
 }
 
@@ -235,12 +235,10 @@ button {
 }
 
 .contact-details li {
-  padding-bottom: 1rem;
-  margin-left: 10rem;
-  right: 22rem;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .hidden {
   display: none;
-  /* visibility: hidden; */
 }

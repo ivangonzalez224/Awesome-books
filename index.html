@@ -24,35 +24,35 @@
           </li>
         </ul>
       </div>  
-      <div class="date-container">
-        <span>Date-time</span>
+      <div class="date-container" id="date">
+        
       </div>
     </header>
     
-    <div class="book-container">
+    <div class="book-container" id="main-container">
       <h1 class="book-title">Awesome books Collection</h1>
     </div>
-    <section class="display-section" id="display-list"></section>
+    <section id="display-list" class="display-section hidden"></section>
     <br>
-    <hr>
     
-    <div id="addBook-div" class="">
-        <h2>Add a new book</h2>
-        <div id="inputs">
+    
+    <section id="add-book-div" class="form-section hidden">
+      <h2>Add a new book</h2>
+      <div id="inputs">
         <input class="title-input" id="title" name="title" type="text" placeholder="Title">
         <input class="author-input" id="author" title="author" type="text" placeholder="Author">
         <button class="add-button" id="addBook" type="submit">Add</button>
       </div>
-    </div>
+    </section>
 
-    <section class="contact-section" id="contact-div">
+    <section id="contact-div" class="contact-section hidden">
       <h2 class="contact-title"> Contact us </h2>
       <p class="contact-text">
         Do you have any questions or you just want to say <strong>"HELLO"?</strong>
+        <br>You can reach out to us!
       </p>
-      <p class="contact-text2"> You can reach out to us! </p>
       <ul class="contact-details">
-        <li> Our email: diarisdiakite@gmail.com <br> ivan.gonzalezr224@gmail.com </li>
+        <li> Our email: <br> diarisdiakite@gmail.com <br> ivan.gonzalezr224@gmail.com </li>
         <li> Our phone number:+1-2345-67890 </li>
         <li> Our address: 10, Downing Street, London, UK. </li>
       </ul>
@@ -65,6 +65,5 @@
 
   </main>
     <script src="assets/js/script.js"></script>
-    <!-- <script src="assets/js/spa.js"></script> -->
 </body>
 </html>
