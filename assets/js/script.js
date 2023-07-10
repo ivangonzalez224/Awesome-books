@@ -4,15 +4,16 @@ const addButton = document.querySelector('#addBook');
 const formTitle = document.getElementById('title');
 const formAuthor = document.getElementById('author');
 const bookList = document.querySelector('#display-list');
-const navbarDisplaylink = document.getElementById('topNav_listItem');
 const displayAddBook = document.getElementById('add-book-div');
-const navbarAddlink = document.getElementById('topNav_newItem');
-const displayContact = document.getElementById('contact-div');
-const navbarContactlink = document.getElementById('topNav_contactItem');
+const topNavBtnLinksUl = document.querySelector('.top_nav_btnLinksUl');
+const middleSection = document.querySelectorAll('.hidden');
 
 const bookTitle = document.querySelector('.book-title');
 bookList.style.display = 'block';
 displayAddBook.style.display = 'none';
+
+const navBarBtnsId = ['List', 'Add new', 'Contact'];
+const titlesSection = ['All awesome books', 'Add a new book', 'Contact information'];
 
 class Book {
   constructor() {
@@ -87,32 +88,26 @@ let dateTime = new Date();
 dateTime = dateTime.toUTCString();
 date.innerHTML = `<small>${dateTime}</small>`;
 
-navbarDisplaylink.addEventListener('click', () => {
-  navbarDisplaylink.style.color = '#0000ff';
-  navbarAddlink.style.color = '#000';
-  navbarContactlink.style.color = '#000';
-  bookTitle.innerHTML = 'All awesome books';
-  bookList.style.display = 'block';
-  displayAddBook.style.display = 'none';
-  displayContact.style.display = 'none';
-});
-
-navbarAddlink.addEventListener('click', () => {
-  navbarAddlink.style.color = '#0000ff';
-  navbarDisplaylink.style.color = '#000';
-  navbarContactlink.style.color = '#000';
-  bookTitle.innerHTML = 'Add a new book';
-  bookList.style.display = 'none';
-  displayAddBook.style.display = 'flex';
-  displayContact.style.display = 'none';
-});
-
-navbarContactlink.addEventListener('click', () => {
-  navbarContactlink.style.color = '#0000ff';
-  navbarAddlink.style.color = '#000';
-  navbarDisplaylink.style.color = '#000';
-  bookTitle.innerHTML = 'Contact information';
-  bookList.style.display = 'none';
-  displayAddBook.style.display = 'none';
-  displayContact.style.display = 'flex';
-});
+// crea nav bar links//
+for (let i = 0; i < navBarBtnsId.length; i += 1) {
+  const navBarList = document.createElement('li');
+  const navBarLink = document.createElement('a');
+  navBarLink.id = navBarBtnsId[i];
+  navBarLink.className = 'topNav_listLink';
+  navBarLink.innerHTML = navBarBtnsId[i];
+  topNavBtnLinksUl.appendChild(navBarList);
+  navBarList.appendChild(navBarLink);
+  navBarLink.addEventListener('click', () => {
+    const indexNavLink = navBarBtnsId.indexOf(navBarLink.id);
+    bookTitle.innerHTML = titlesSection[indexNavLink];
+    const listLinkElements = document.querySelectorAll('.topNav_listLink');
+    for (let j = 0; j < listLinkElements.length; j += 1) {
+      listLinkElements[j].style.color = '#000';
+      middleSection[j].style.display = 'none';
+      if (j === indexNavLink) {
+        listLinkElements[j].style.color = '#0000ff';
+        middleSection[j].style.display = 'flex';
+      }
+    }
+  });
+}

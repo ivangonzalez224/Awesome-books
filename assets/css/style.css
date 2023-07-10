@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700;900&display=swap');
 
+
+:root {
+  --navLinksColor: #00f;
+  --elementsColor: #000;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -9,6 +15,7 @@
 body {
   font-size: 16px;
   font-family: 'Lato', sans-serif;
+  color: var(--elementsColor);
 }
 
 header {
@@ -24,13 +31,14 @@ header {
   justify-content: space-between;
   align-items: center;
   width: 90%;
+  max-width: 765px;
   margin: 1% 5%;
-  border: 2px solid #000;
+  border: 2px solid var(--elementsColor);
   padding: 1% 2%;
 }
 
 .top_nav span {
-  width: 60%;
+  width: 50%;
 }
 
 .contact-details li {
@@ -42,27 +50,27 @@ header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  width: 40%;
+  width: 50%;
 }
 
 .top_nav ul li {
   list-style-type: none;
-  border-right: 1px solid #000;
+  border-right: 1px solid var(--elementsColor);
   margin-left: 2%;
   padding: 0 2%;
 }
 
 .top_nav ul li a {
   text-decoration: none;
-  color: #000;
+  cursor: pointer;
 }
 
 .top_nav ul li a:hover {
-  color: #00f;
+  color: var(--navLinksColor) !important;
 }
 
-#topNav_listItem {
-  color: #00f;
+#List {
+  color: var(--navLinksColor);
 }
 
 .top_nav ul li:last-child {
@@ -72,6 +80,7 @@ header {
 .date-container {
   display: flex;
   width: 90%;
+  max-width: 765px;
   justify-content: flex-end;
 }
 
@@ -108,13 +117,12 @@ h1 {
 }
 
 button {
-  font-family: 'Lato', sans-serif;
   border: none;
   cursor: pointer;
   height: 1.5rem;
   width: 4rem;
   border-radius: 4px;
-  box-shadow: 4px 4px rgb(0, 0, 0);
+  box-shadow: 4px 4px var(--elementsColor);
   background-color: #fff;
 }
 
@@ -132,7 +140,7 @@ button {
 }
 
 .display-section {
-  border: 1px solid black;
+  border: 1px solid var(--elementsColor);
   width: 90%;
 }
 
@@ -142,7 +150,7 @@ button {
   border-radius: 4px;
   font-size: 1rem;
   box-shadow: rgba(0, 0, 0, 0.16) 0 1px 4px;
-  border: solid 1px rgb(0, 0, 0);
+  border: solid 1px var(--elementsColor);
 }
 
 .author-input {
@@ -165,7 +173,6 @@ button {
 .add-button {
   height: 2rem;
   width: 4.5rem;
-  font-family: 'Lato', sans-serif;
   cursor: pointer;
   align-self: end;
 }
@@ -188,8 +195,9 @@ button {
 /* Footer section */
 
 .footer-section {
-  border: 1.5px solid black;
+  border: 1.5px solid var(--elementsColor);
   width: 90%;
+  max-width: 765px;
   bottom: 0;
   margin: 1% 5%;
   padding: 1% 0;
@@ -232,4 +240,5 @@ button {
 
 .hidden {
   display: none;
+  max-width: 765px;
 }
