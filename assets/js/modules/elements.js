@@ -1,0 +1,10 @@
+export const topNavBtnLinksUl = document.querySelector('.top_nav_btnLinksUl');
+export const bookTitle = document.querySelector('.book-title');
+export const middleSection = document.querySelectorAll('.hidden');
+const bookList = document.querySelector('#display-list');
+export default bookList;
+export const displayAddBook = document.getElementById('add-book-div');
+export const addButton = document.querySelector('#addBook');
+export const formTitle = document.getElementById('title');
+export const formAuthor = document.getElementById('author');
+export const myDate = document.getElementById('date');
