@@ -1,10 +1,6 @@
 import { navBarBtnsId, titlesSection } from './navLinksData.js';
 import { topNavBtnLinksUl, bookTitle, middleSection } from './elements.js';
 
-// const topNavBtnLinksUl = document.querySelector('.top_nav_btnLinksUl');
-// const bookTitle = document.querySelector('.book-title');
-// const middleSection = document.querySelectorAll('.hidden');
-
 const createNavbarLinks = () => {
   for (let i = 0; i < navBarBtnsId.length; i += 1) {
     const navBarList = document.createElement('li');
